@@ -1,0 +1,43 @@
+{
+  "name": "atlas-ai-telegram-bot-web",
+  "description": "ATLAS AI Telegram Bot - Web Service Edition with Flask Server",
+  "keywords": ["ai", "telegram", "bot", "atlas", "media", "voice", "documents", "web-service"],
+  "website": "https://github.com/atlas-ai/telegram-bot",
+  "repository": "https://github.com/atlas-ai/telegram-bot",
+  "logo": "https://example.com/logo.png",
+  "env": {
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true,
+      "value": "8555351421:AAG-8SOqO9Vqv9sIlcUIHG7lm3MRN0B4RCI"
+    },
+    "GroqAPIKey": {
+      "description": "Your Groq API Key for AI responses",
+      "required": true,
+      "value": "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"
+    },
+    "AssistantName": {
+      "description": "Bot assistant name",
+      "required": false,
+      "value": "ATLAS"
+    },
+    "Creator": {
+      "description": "Creator name",
+      "required": false,
+      "value": "K.V.SARVESH"
+    },
+    "PORT": {
+      "description": "Port for Flask server",
+      "required": false,
+      "value": "8000"
+    }
+  },
+  "build": {
+    "env": {
+      "PYTHONPATH": "/app"
+    }
+  },
+  "scripts": {
+    "start": "python app.py"
+  }
+}
